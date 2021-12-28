@@ -6,7 +6,7 @@ class Puzzle:
         self.open_list = []
         self.closed_list = []
   def h_value(self,list,goal):
-    """To compute heuristic value,h(n),the number of non-blank tiles not in
+    """To compute estimated cost of reaching goal node.h(n) is the number of non-blank tiles not in
         their goal position"""
     count=0
     for i in range(self.n):
