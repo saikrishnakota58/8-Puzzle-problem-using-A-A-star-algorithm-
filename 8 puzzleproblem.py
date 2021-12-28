@@ -127,7 +127,6 @@ class Node:
             child = Node(self,bottom, self.level + 1, 0)
             children.append(child)
         if y < len(self.state)-1:  #  condition to check whether blank space can be moved to right
-            """"""
             right = copy.deepcopy(self.state)
             """Shuffle blank space and its right side tile"""
             right[x][y], right[x][y + 1] =  right[x][y + 1],right[x][y]
